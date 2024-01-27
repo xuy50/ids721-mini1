@@ -4,5 +4,6 @@
 <h1 class="title">
     {{ section.title }}
 </h1>
+<p><a href="{{ get_url(path='@/project/_index.md') }}">Project</a></p>
 {{ section.content | safe }}
 {% endblock content %}
