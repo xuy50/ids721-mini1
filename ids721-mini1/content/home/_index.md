@@ -1,6 +1,6 @@
 +++
-title = "Course Syllabus"
-template = "index.html"
+title = "Home Page"
+template = "home.html"
 +++
 
 ## Course Description
