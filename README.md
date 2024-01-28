@@ -1,46 +1,70 @@
 # ids721-mini1
 
-## install zola in Ubuntu system
+## Installation of Zola on Ubuntu
 
-go to zola website and download a version compressed package from the github page: https://github.com/getzola/zola/releases
-for me I use this version package: `zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz`
+1. Download Zola from the [official releases page](https://github.com/getzola/zola/releases). For example, use `zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz`.
 
-unzip: `tar -xzf zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz`
-Move Zola to the bin Directory: `sudo mv zola /usr/local/bin`
-if you want to get more information you can go to Zola offical web doc page: https://www.getzola.org/documentation/getting-started/installation/
+2. Unzip the package:
+```tar -xzf zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz```
 
-
-## inital and run zola serve
-- intial the project 
-    `zola init project_name`
-- build your project
-    `zola build`
-- run your project serve, the default port is 1111
-    `zola serve`
+3. Move Zola to the bin directory:
+```sudo mv zola /usr/local/bin```
+For more information, refer to the [Zola Official Documentation](https://www.getzola.org/documentation/getting-started/installation/).
 
 
-## theme install
-Download the themes you want to your themes directory. Then, you need to tell Zola to use it by setting the `theme` variable in the configuration file. The theme name has to be the name of the directory you cloned the theme in. For example, I cloned the theme in `themes/kita`, the theme name to use in the configuration file is kita. Also make sure to place the variable in the top level of the `.toml` hierarchy and not after a dict like `[extra]` or `[markdown]`. Some themes require additional configuration before they can work properly. Be sure to follow the instructions found on your chosen theme's documentation to properly configure the theme.
+## Initial Setup and Running Zola Server
+
+- Initialize the project: 
+    ```zola init project_name```
+
+- Build the project:
+    ```zola build```
+
+- - Run the server (default port is 1111):
+   ```zola serve```
 
 
-## theme use and modify
-- if we want to use the theme, we need to add `extends` code in our template html file, and change the block to fit the theme index. And if you need to modify something, we can copy the index code to our own `index.html` template or change the code in theme file you want to modify. And if you did not add the `extends` code in your own code or copy the code from theme into your own file, the theme will not take effect and render for your project.
-- for the `config.toml` file, if you want to use the theme, please copy the `config.toml` file or all its code into your config.toml file in the root directory. Then, check the config codes in your config.toml, and modify them for your own project, you can add extra option config for your own project, and you also can modify or delete the original code you copied from the theme for your own config you need. You can modify config.toml to customize your index template.
+## Theme Installation
 
-## My page
-On the header of the page template, there are buttons to jump to each other between the Home and Projects list pages. You can use these two buttons to jump to any page on this website.
+1. Download your chosen theme to the `themes` directory.
 
-### home page
-This is my web Home page. A brief description of the content of the ids-721 course I took.
-![image](homepage.png)
+2. Update the `theme` variable in the configuration file to match the name of your theme's directory (e.g., `themes/kita`).
 
-### projects list page
-This is the portfolio page of my projects. It lists all my IDS-721 course projects.
-![image](projectslistpage.png)
+ **Note:** Ensure the `theme` variable is at the top level of the `.toml` hierarchy, not nested under sections like `[extra]` or `[markdown]`.
+
+3. Follow any additional configuration instructions provided in your theme's documentation.
+
+## Theme Usage and Customization
+
+- To use a theme, add the `extends` directive in your template HTML files. Modify the blocks to fit the theme's index.
+
+- For further customization, you can either:
+- Copy the index code from the theme to your `index.html` file, or
+- Modify the theme files directly.
+
+- Update the `config.toml` file in your project's root directory with the theme's `config.toml` settings. Customize these settings to suit your project's needs.
 
 
-### project detail page
-This is my project details page. It has details of the currently selected item. On this page, you can jump to the git repo of the current project through the `mini-project x Git Repo Link` hyperlink. You can also click the `Back` button to return to the previous project overview list page.
-![image](projectpage.png)
+## Website Structure
+
+In the header of the page template, you'll find `Home` and `Projects` buttons that enable easy navigation between the Home page and the Projects List page, allowing quick access to any section of the website.
+
+### Home Page
+
+- Overview of the IDS-721 course content.
+- ![Home Page](homepage.png)
+
+### Projects List Page
+
+- Portfolio of IDS-721 course projects.
+- ![Projects List Page](projectslistpage.png)
+
+### Project Detail Page
+
+- Detailed view of a selected project.
+- Direct links to the corresponding Git repository.
+- Back button to return to the project overview list.
+- ![Project Detail Page](projectpage.png)
+
 
 ## deploy
