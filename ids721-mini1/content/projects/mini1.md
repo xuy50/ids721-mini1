@@ -1,6 +1,6 @@
 +++
 title = "mini-projecct 1"
-description = "https://github.com/xuy50/ids721-mini1"
+description = "https://gitlab.oit.duke.edu/yx248/ids721-mini1"
 +++
 
 # Create a static site with ZolaLinks to an external site.
