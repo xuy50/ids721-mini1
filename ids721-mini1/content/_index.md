@@ -1,9 +1,9 @@
 +++
 title = "Home Page"
-template = "home.html"
+template = "index.html"
 +++
 
-## Course Description
+## IDS-271 Course Description
 
 This course offers a comprehensive exploration of cloud computing, delving into Big Data, Machine Learning, and Large Language Models (LLMs). Interactive AWS labs provide a hands-on learning experience. The curriculum is project-based, ensuring practical application of concepts learned.
 

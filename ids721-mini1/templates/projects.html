@@ -1,6 +1,6 @@
-{% extends "base.html" %}
+{% extends "index.html" %}<!---->
+{% block main %}<!---->
 
-{% block content %}
 <h1 class="title">
   {{ section.title }}
 </h1>
@@ -10,4 +10,5 @@
   <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
   {% endfor %}
 </ul>
-{% endblock content %}
+
+{% endblock main %}
