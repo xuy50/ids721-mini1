@@ -73,7 +73,7 @@ comment = false
 # The profile on home page.
 [extra.profile]
 name = "Yang Xu IDS-721 Web Page"
-bio = "This web is for my IDS-271 projects"
+bio = "SWE intern @Duke University OIT | Master of Science in Computer Engineering Student at Duke University"
 # The URL of avatar.
 avatar_url = "icons/icon.jpg"
 # Invert color in dark mode.
