@@ -52,19 +52,19 @@ In the header of the page template, you'll find `Home` and `Projects` buttons th
 ### Home Page
 
 - Overview of the IDS-721 course content.
-- ![Home Page](homepage.png)
+![Home Page](homepage.png)
 
 ### Projects List Page
 
 - Portfolio of IDS-721 course projects.
-- ![Projects List Page](projectslistpage.png)
+![Projects List Page](projectslistpage.png)
 
 ### Project Detail Page
 
 - Detailed view of a selected project.
 - Direct links to the corresponding Git repository.
 - Back button to return to the project overview list.
-- ![Project Detail Page](projectpage.png)
+![Project Detail Page](projectpage.png)
 
 
 ## deploy
