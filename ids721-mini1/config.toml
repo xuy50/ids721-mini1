@@ -1,6 +1,5 @@
 # The URL the site will be built for
-# base_url = "https://st1020.github.io/kita"
-base_url = "https://github.com/xuy50/ids721-mini1"
+base_url = "https://yx248-mini1-dukeaiml1-cd45ddf5cfb7f6f49ca255b967f527ecf4971f510.gitlab.io"
 
 # theme
 theme = "kita"

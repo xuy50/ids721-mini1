@@ -1,5 +1,7 @@
 # ids721-mini1
 
+[My Zola Web](https://yx248-mini1-dukeaiml1-cd45ddf5cfb7f6f49ca255b967f527ecf4971f510.gitlab.io)
+
 ## Installation of Zola on Ubuntu
 
 1. Download Zola from the [official releases page](https://github.com/getzola/zola/releases). For example, use `zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz`.
@@ -67,4 +69,38 @@ In the header of the page template, you'll find `Home` and `Projects` buttons th
 ![Project Detail Page](projectpage.png)
 
 
-## deploy
+## Deployment to GitLab Pages
+
+To deploy your Zola site on GitLab Pages, follow these steps:
+
+1. **Create a `.gitlab-ci.yml` File:**
+   Create a `.gitlab-ci.yml` file in the root of your repository. This file is used by GitLab CI/CD to manage your project's jobs.
+
+2. **Configure the CI/CD Pipeline:**
+   Add the following script to your `.gitlab-ci.yml` file:
+   ```yaml
+   image: "registry.gitlab.com/pages/hugo:latest"
+
+   pages:
+     script:
+     - zola build
+     artifacts:
+       paths:
+       - public
+    ```
+   This script tells GitLab to use a docker image with Zola installed, build your site with Zola, and then store the output in the `public` directory.
+   Remember to chang the `value: ""` in `ZOLA_VERSION:` to `value: "0.18.0"`.
+
+3. **Push to GitLab:**
+   Commit and push this file to your GitLab repository.
+
+4. **Check Pipeline Status:**
+   After pushing, navigate to `CI/CD > Pipelines` in your GitLab repository to check the status of your pipeline. Once it's passed, your site is live.
+
+5. **Accessing Your Site:**
+   Your site will be available at `https://[username].gitlab.io/[repository-name]`, where `[username]` is your GitLab username, and `[repository-name]` is the name of your GitLab repository.
+
+6. **Custom Domain (Optional):**
+   If you wish to use a custom domain, refer to the [GitLab Pages Custom Domains documentation](https://docs.gitlab.com/ee/user/project/pages/custom_domains_ssl_tls_certification/index.html) for guidance.
+
+For more detailed instructions and configurations, visit the [Zola documentation on GitLab Pages deployment](https://www.getzola.org/documentation/deployment/gitlab-pages/).
