@@ -1,6 +1,6 @@
 # ids721-mini1
 
-[My Zola Web](https://yx248-mini1-dukeaiml1-cd45ddf5cfb7f6f49ca255b967f527ecf4971f510.gitlab.io)
+[My Zola Web](https://yx248-mini1-dukeaiml-ids721-886f1fc470df5c71fb3c4a1700132e5a1ff.gitlab.io)
 
 ## Installation of Zola on Ubuntu
 
@@ -16,7 +16,7 @@ For more information, refer to the [Zola Official Documentation](https://www.get
 
 ## Initial Setup and Running Zola Server
 
-- Initialize the project: 
+- Initialize the project:
     ```zola init project_name```
 
 - Build the project:
